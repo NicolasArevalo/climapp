@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Web site created using create-snowpack-app" />
+  <link rel="stylesheet" type="text/css" href="/_dist_/index.css" />
+  <title>Climapp By Nico</title>
+</head>
+
+<body class="bg-indigo-900">
+  <div class="py-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="">
+      <p class="
+            text-base
+            leading-6
+            text-green-400
+            font-semibold
+            tracking-wide
+            text-center
+          ">
+        By <a href="https://nicolasarevalo.tk" class="underline">Nico</a>
+      </p>
+      <h3 class="
+            mt-2
+            text-4xl
+            leading-8
+            font-extrabold
+            tracking-tight
+            text-center text-gray-200
+            sm:text-4xl sm:leading-10
+          ">
+        Climapp
+      </h3>
+      <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-200 mx-auto">
+        Esta aplicación fue creada con el objetivo de afianzar los
+        conociemientos en Tailwind y APIs. En este caso, puedes consultar el
+        clima de una ciudad simplemente buscandola.
+        <span class="text-gray-300 block text-sm">API:
+          <a href="https://openweathermap.org/api" class="underline">OpenWeather</a></span>
+      </p>
+    </div>
+    <form>
+
+      <div class="mt-8 mx-auto max-w-lg mx-0 shadow-sm flex w-full gap-2 align-center padre">
+        <input id="city" type="text" required placeholder="Ingresa una ciudad" class="
+                    appearance-none
+                    
+                    w-3/4
+                    px-3
+                    py-2
+                    border border-gray-300
+                    rounded-md
+                    placeholder-gray-400
+                    focus:outline-none
+                    focus:shadow-outline-blue
+                    focus:border-blue-300
+                    transition
+                    duration-150
+                    ease-in-out
+                    sm:text-sm sm:leading-5
+                  " />
+        <span class="rounded-md shadow-sm w-1/4">
+          <button type="submit" class="
+                      
+                      py-2
+                      px-4
+                      border border-transparent
+                      text-sm
+                      font-medium
+                      rounded-md
+                      text-white
+                      bg-green-600
+                      hover:bg-green-500
+                      focus:outline-none
+                      focus:border-indigo-700
+                      focus:shadow-outline-indigo
+                      active:bg-indigo-700
+                      transition
+                      duration-150
+                      ease-in-out
+                    ">
+            Consultar
+          </button>
+        </span>
+
+      </div>
+
+    </form>
+    <div class="results flex gap-3 mt-4 items-center justify-center flex-wrap">
+      
+    </div>
+  </div>
+
+  <!-- Add more scripts here -->
+  <script type="module" src="/_dist_/index.js"></script>
+</body>
+
+</html>
