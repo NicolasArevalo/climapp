@@ -30,7 +30,7 @@ const createCard = (info) =>{
     /* Agregando info a las etiquetas */
     
     nomCiudad.textContent = `${info.name}, ${info.sys.country}`
-    temp.textContent = `${Math.round(info.main.temp - 273.15)} °C`
+    temp.textContent = `${Math.round(info.main.temp)} °C`
     icon.src = `${API_IMG}${info.weather[0].icon}.png`
     description.textContent = info.weather[0].description
 
@@ -44,7 +44,7 @@ const createCard = (info) =>{
 const formThings = async (e) =>{
     e.preventDefault()
     let ciudad = input.value
-    const info = await fetch(`${API}?q=${ciudad}&appid=${API_KEY}&lang=es`)
+    const info = await fetch(`${API}?q=${ciudad}&appid=${API_KEY}&lang=es&units=metric`)
     const infoFormated = await info.json()
     
     if(infoFormated.cod == 404){
